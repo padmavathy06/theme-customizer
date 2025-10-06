@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Theme Customizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="customizer">
+    <h2>🎨 Theme Customizer</h2>
+
+    <div class="option">
+      <label>Mode:</label>
+      <button id="lightMode">Light</button>
+      <button id="darkMode">Dark</button>
+      <button id="autoMode">Auto</button>
+    </div>
+
+    <div class="option">
+      <label for="accentColor">Accent Color:</label>
+      <input type="color" id="accentColor" value="#4c8bf5">
+    </div>
+
+    <div class="option">
+      <label for="bgColor">Background Color:</label>
+      <input type="color" id="bgColor" value="#ffffff">
+    </div>
+
+    <div class="option">
+      <label for="bgImage">Background Image:</label>
+      <select id="bgImage">
+        <option value="none">None</option>
+        <option value="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=60">Nature</option>
+        <option value="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60">Ocean</option>
+        <option value="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=60">Sky</option>
+      </select>
+    </div>
+
+    <div class="option">
+      <label for="textColor">Text:</label>
+      <input type="color" id="textColor" value="#333333">
+    </div>
+
+    <div class="option">
+      <label for="fontFamily">Font Family:</label>
+      <select id="fontFamily">
+        <option value="'Poppins', sans-serif">Poppins</option>
+        <option value="'Roboto', sans-serif">Roboto</option>
+        <option value="'Open Sans', sans-serif">Open Sans</option>
+        <option value="'Playfair Display', serif">Playfair Display</option>
+      </select>
+    </div>
+
+    <div class="option">
+      <label for="fontSize">Font Size:</label>
+      <input type="range" id="fontSize" min="12" max="22" value="16">
+    </div>
+
+    <div class="option">
+      <label for="borderRadius">Card Radius:</label>
+      <input type="range" id="borderRadius" min="0" max="30" value="10">
+    </div>
+
+    <div class="option">
+      <label for="glassEffect">Glass Effect Intensity:</label>
+      <input type="range" id="glassEffect" min="0" max="30" value="15">
+    </div>
+
+
+    <div class="option">
+      <label>Presets:</label>
+      <button class="preset" data-theme="modern">Modern</button>
+      <button class="preset" data-theme="minimal">Minimal</button>
+      <button class="preset" data-theme="neon">Neon</button>
+    </div>
+
+    <div class="option">
+      <button id="exportTheme">Export</button>
+      <input type="file" id="importTheme" accept=".json" />
+    </div>
+
+    <div class="option">
+      <button id="resetTheme" class="reset">Reset</button>
+    </div>
+  </div>
+
+  <div class="preview">
+    <h1>🌟 Live Preview</h1>
+    <p>Adjust the settings on the left to customize your theme in real time.</p>
+    <div class="card">
+      <h3>Sample Card</h3>
+      <p>This is an example of how your theme affects elements.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
